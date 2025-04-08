@@ -22,14 +22,39 @@ function search(stringNames, findChar) {
   for (i = 0; i < stringNames.length; i++) {
     const currentValue = stringNames[i];
 
-    if (firstCharTradition(stringNames[i]) === findChar) {
+    if (
+      firstCharTradition(stringNames[i]).toLowerCase() ===
+      findChar.toLowerCase()
+    ) {
       stringFound.push(currentValue);
     }
   }
   return stringFound;
 }
 
+//Arrow Function
+const firstCharArrow = (name) => {
+  return name[0];
+};
+
+const searchArrow = (stringNames, findChar) => {
+  const stringFound = [];
+  for (i = 0; i < stringNames.length; i++) {
+    const currentValue = stringNames[i];
+
+    if (
+      firstCharArrow(stringNames[i]).toLowerCase() === findChar.toLowerCase()
+    ) {
+      stringFound.push(currentValue);
+    }
+  }
+  return stringFound;
+};
+
 // Invoca la funzione qui e stampa il risultato in console
+console.log("Traditional Function:");
 console.log(search(names, "A"));
+console.log("Arrow Function: ");
+console.log(searchArrow(names, "A"));
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]

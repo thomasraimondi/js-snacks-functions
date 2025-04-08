@@ -16,7 +16,7 @@ console.log(date);
  * @returns {string} welcomeString - stringa di saluto
  */
 function welcomeTraditional(stringName) {
-  const welcomeString = timeOfDay(17) + stringName;
+  const welcomeString = timeOfDay(date.getHours) + stringName;
   return welcomeString;
 }
 /**
