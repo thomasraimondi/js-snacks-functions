@@ -27,5 +27,6 @@ for (i = 0; i < names.length; i++) {
   const currentValue = firstCharTradition(names[i]);
   initials.push(currentValue);
 }
+
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
 console.log(initials);

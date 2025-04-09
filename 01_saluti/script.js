@@ -21,8 +21,7 @@ const welcomeArrow = (stringName) => {
 };
 
 //Arrow Function Short
-const welcomeArrowShort = (stringName) =>
-  (welcomeString = "Ciao " + stringName);
+const welcomeArrowShort = (stringName) => "Ciao " + stringName;
 
 // Invoca la funzione qui e stampa il risultato in console
 console.log(welcomeTraditional(userName));

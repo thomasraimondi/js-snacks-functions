@@ -26,10 +26,9 @@ function welcomeTraditional(stringName) {
  */
 function timeOfDay(hour) {
   let welcomeMessagge;
-  if (hour <= 13) welcomeMessagge = "Buongiorno ";
-  else if (hour > 13 && hour <= 17) welcomeMessagge = "Buon Pomeriggio ";
-  else welcomeMessagge = "Buona sera ";
-  return welcomeMessagge;
+  if (hour <= 13) return (welcomeMessagge = "Buongiorno ");
+  if (hour > 13 && hour <= 17) return (welcomeMessagge = "Buon Pomeriggio ");
+  return (welcomeMessagge = "Buona sera ");
 }
 
 // Invoca la funzione qui e stampa il risultato in console
